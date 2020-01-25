@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Asunción en Nicaragua</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.js"></script>
+
+    <script src="assets/library/jquery.min.js"></script>
+    <script src="../dist/components/transition.js"></script>
+    <script src="../dist/components/dropdown.js"></script>
+    <script src="../dist/components/visibility.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            });
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+        }
+
+        .main.container {
+            margin-top: 2em;
+        }
+
+        .main.menu {
+            margin-top: 4em;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            transition:
+                box-shadow 0.5s ease,
+                padding 0.5s ease;
+        }
+
+        .main.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+
+        .overlay {
+            float: left;
+            margin: 0em 3em 1em 0em;
+        }
+
+        .overlay .menu {
+            position: relative;
+            left: 0;
+            transition: left 0.5s ease;
+        }
+
+        .main.menu.fixed {
+            background-color: #FFFFFF;
+            border: 1px solid #DDD;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .overlay.fixed .menu {
+            left: 800px;
+        }
+
+        .text.container .left.floated.image {
+            margin: 2em 2em 2em -4em;
+        }
+
+        .text.container .right.floated.image {
+            margin: 2em -4em 2em 2em;
+        }
+
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="ui borderless main menu">
+        <div class="ui text container">
+            <div class="header item">
+                <a class=" item " href="index.html"> <img src="resources/img/logo.png" alt=""> Colegio Madre Maria
+                    Eugenia </a>
+
+            </div>
+            <div class="right item">
+                <div class="ui simple dropdown item">
+                    ¿Quienes somos?
+                    <div class=" menu">
+                        <div class="item" onclick="location.href='Mision_vision.html'">Mision y vision</div>
+                        <div class="item" onclick="location.href='historia_nic.html'">La congregación de la Asunción
+                        </div>
+                        <div class="item" onclick="location.href='historia_colegio.html'">Historia del Colegio </div>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    Personal
+                    <div class="menu">
+                        <div class="item"> Personal Administrativo</div>
+                        <div class="item">Personal Docente</div>
+                        <div class="item">Consejo de dirección</div>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    Pastoral Juvenil
+                    <div class="menu">
+                        <div class="item">CAM</div>
+                        <div class="item">JOMA</div>
+                        <div class="item">IMA</div>
+                        <div class="item">Danza</div>
+                        <div class="item">Banda</div>
+                        <div class="item">Presidentes de sección</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui text container">
+        <img class="ui small left floated border image" data-src="resources/img/mme.png">
+        <br>
+        <p>La congregación de las religiosas de la Asunción fué fundada en Paris el 30 de Abril de 1839, por Santa
+            Maria Eugenia de Jesús, guiada por una visión eminentemente cristocentrica y social basada en dos ideas
+            maestras: el reconocimiento de los <b>"derechos de Dios"</b> y la trasnformacion de la sociedad,
+            consecuencia
+            lógica de la puesta en practica de los principios del Evangelio y de la ley de Cristo libertador y rey del
+            universo.
+        </p><img class="ui medium circular right floated border image" data-src="resources/img/mme3.jpg">
+
+        <br>
+
+        <p>El gran medio para lograrlo es la educación. Esta es la misión que la iglesia católica nos confia, como medio
+            privilegiado para la evangelización de la inteligencia, la formacion del carácter y del compromiso a favor
+            de los hermanos y hermanas, en vistas a la tranformación de la sociedad. La idea original de Santa Maria
+            Eugenia
+            imprime a la Asunción, un carisma especial que se difunde a travez del trabajo que realiza la congregación
+            en todo
+            el mundo.
+        </p>
+        <p>La Asunción llego al continente americano en 1892, año en que se fundó la primera casa en la ciudad
+            de <b>León, Nicaragua.</b>
+        </p>
+        <div class="overlay">
+            <!--  <div class="ui labeled icon vertical menu">
+                <a class="item"><i class="twitter icon"></i> Tweet</a>
+                <a class="item"><i class="facebook icon"></i> Share</a>
+                <a class="item"><i class="mail icon"></i> E-mail</a>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted divided grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 1</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 2</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 3</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img src="resources/img/logo.png" class="ui centered mini image">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Contactanos!</a>
+                <a class="item">Colegio Madre Maria Eugenia @Todos los derechos reservados</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</body>
+
+</html>

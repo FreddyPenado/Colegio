@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Historia del Colegio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.8/dist/semantic.min.js"></script>
+
+
+    <script src="assets/library/jquery.min.js"></script>
+    <script src="../dist/components/transition.js"></script>
+    <script src="../dist/components/dropdown.js"></script>
+    <script src="../dist/components/visibility.js"></script>
+    <script>
+        $(document)
+            .ready(function () {
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            });
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+        }
+
+        .main.container {
+            margin-top: 2em;
+        }
+
+        .main.menu {
+            margin-top: 4em;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            transition:
+                box-shadow 0.5s ease,
+                padding 0.5s ease;
+        }
+
+        .main.menu .item img.logo {
+            margin-right: 1.5em;
+        }
+
+        .overlay {
+            float: left;
+            margin: 0em 3em 1em 0em;
+        }
+
+        .overlay .menu {
+            position: relative;
+            left: 0;
+            transition: left 0.5s ease;
+        }
+
+        .main.menu.fixed {
+            background-color: rgb(#FFFFFF);
+            border: 1px solid #DDD;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .overlay.fixed .menu {
+            left: 800px;
+        }
+
+        .text.container .left.floated.image {
+            margin: 2em 2em 2em -4em;
+        }
+
+        .text.container .right.floated.image {
+            margin: 2em -4em 2em 2em;
+        }
+
+        .ui.footer.segment {
+            margin: 5em 0em 0em;
+            padding: 5em 0em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="ui borderless main menu">
+        <div class="ui text container">
+            <a class=" item " href="index.html"> <img src="resources/img/logo.png" alt=""> Colegio Madre Maria
+                Eugenia </a>
+            <div class="right item">
+                <div class="ui simple dropdown item">
+                    ¿Quienes somos?
+                    <div class=" menu">
+                        <div class="item" onclick="location.href='Mision_vision.html'">Mision y vision</div>
+                        <div class="item" onclick="location.href='historia_nic.html'">La congregación de la Asunción
+                        </div>
+                        <div class="item" onclick="location.href='historia_colegio.html'">Historia del Colegio </div>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    Personal
+                    <div class="menu">
+                        <div class="item"> Personal Administrativo</div>
+                        <div class="item">Personal Docente</div>
+                        <div class="item">Consejo de dirección</div>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    Pastoral Juvenil
+                    <div class="menu">
+                        <div class="item">CAM</div>
+                        <div class="item">JOMA</div>
+                        <div class="item">IMA</div>
+                        <div class="item">Danza</div>
+                        <div class="item">Banda</div>
+                        <div class="item">Presidentes de sección</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui text container">
+        <header class=""> Historia del Colegio Madre Maria Eugenia </header>
+        <hr>
+        <p>El colegio Santa Julia ubicado en el barrio juan ramón sampson antes llamado colonia el recreo, lugar donde
+            eran huertas de maíz, trigo, algodón y frijoles, cuyos terrenos estaban encercados.
+            El colegio Santa Julia se inicia a construir a finales de 1967 e inicia a zanjear a comienzos de 1968 donde
+            encuentran tinajas y dentro de ellas había una variedad de objetos como carbón, huesos, y escrituras q
+            afirmaban que este terreno era un cementerio indígena, e incluso encontraron muñecos de trapos.
+        </p>
+        <p>El colegio Santa Julia fue fundado el 17 de diciembre de 1969 realizada la obra por ex alumnas del colegio
+            asunción como acción significativa a celebrar los 75 años del colegio la asunción de león, obra presidida
+            por la superiora hermana Crisanta Sacaza quien tenía el sueño de hacer una escuela para los niños pobres.
+            Inicio como una escuelita publica ubicada en la esquina del movimiento comunal con un primer y segundo grado
+            obteniendo una población estudiantil de 92 alumnos.
+        </p>
+        <p>En el transcurso de la construcción las hermanas religiosas llegaban al barrio a educar y evangelizar. En
+            este mismo periodo durante la construcción de la escuela los alumnos recibían clases bajo los árboles y en
+            tiempos de lluvia en casa de la familia quintanilla.
+        </p>
+        <p>En 1970 se inició el año escolar del colegio y se le da el nombre de escuela santa julia en honor al
+            cumpleaños de un familiar de Luis Somoza Debayle presidente de la República en ese año. Contaba con un
+            aproximado de 200 alumnos y 8 aulas, las cuales estaban divididas de la siguiente forma:
+        </p>
+        <p>• Tres aulas para primer grado.
+            <br>
+            • Tres aulas para segundo grado.
+            <br>
+            • Un aula para tercero.
+            <br>
+            • Un aula para la bodega.</p>
+
+        <div class="overlay">
+            <!-- <div class="ui labeled icon vertical menu">
+                <a class="item"><i class="twitter icon"></i> Tweet</a>
+                <a class="item"><i class="facebook icon"></i> Share</a>
+                <a class="item"><i class="mail icon"></i> E-mail</a>
+            </div> -->
+        </div>
+        <img class="ui medium left floated image" data-src="resources/img/carousel/c3.jpg">
+        <p>En 1971 se empieza arborizar con cuatro arboles de laureles de la india, todos ubicados costado sur del
+            colegio.
+            En 1972 se construye la sala de arte y confección, y se inician a impartir las clases por la profesora
+            Silvia muñoz mercado.
+            En 1975 se construye la sala convento de las religiosas con muchas limitaciones de tal manera que ni con
+            agua potable podían contar así que recurrieron a la ayuda de los habitantes.</p>
+        <p>
+            En 1976 el ministro de educación reconoce a las primeras directora dela escuela siendo Madre Casilda Solano.
+            En 1978 se inicia a impartir las clases de mecanografía siendo impartidas por la profesora Julia Bravo
+            Jirón, estos cursos eran brindados a la comunidad de escasos recursos económicos cuya carrera duraba tres
+            años y estas máquinas se encontraban en el salón de arte y confección.
+            En 1980 se cambia la pintura por el deterioro a sufrió durante la época de guerra pintándose de color rojo.
+            En ese mismo año se construye la capilla ubicada en el reparto emir cabeza fundada por las religiosas
+            asuncionistas Crisanta Sacaza, Mirella Gasquet y Rosa Inés Medrano.</p>
+        <p>En 1981 la escuela Santa Julia cambia de nombre y pasa a llamarse Colegio Madre María Eugenia, esto se dio
+            por petición de Madre Emilia Alonso para que este centro llevara el nombre de la fundadora de la
+            congregación asuncionista..
+            <img class="ui medium right floated image" data-src="resources/img/carousel/carousel2.jpg">
+            En 1982 se hace un altar a la virgen de los pobres que fue donada por Madre Mirella Gasquet. Igualmente se
+            construye la cancha ubicada al sur-oeste del colegio obra, dirigida por madre Emilia Alonso.
+            En 1983 se construye la gruta por la comunidad en un domingo de rojo y negro que se realizaba anteriormente
+            por el gobierno sandinista.
+            En 1987 se dan los primeros pasos para convertir nuestro centro de estudio en un colegio de secundaria,
+            lográndose primero que fuese hasta el ciclo básico, esto se inició cuando los alumnos de sexto grado
+            cursaron el año escolar y posteriormente iniciaron el séptimo grado.</p>
+        <img class="ui medium left floated image" data-src="resources/img/carousel/carousel3.jpg">
+        <p> En 1988 se edifica la biblioteca al sur este del colegio siendo donada por amigos de madre Emilia Alonso
+            bibliotecarios de Dinamarca. Así como también se construye la tarima para la realización de números
+            culturales contiguo a la biblioteca.
+            En 1991 se realiza la primera promoción de la secundaria básica.
+            En1992 se construye el laboratorio, dos salones de religión, el aula de mecanografía y la sala de servicios
+            de fotocopiadora.
+            En 1994 se construye el aula de pre-escolar desapareciendo la tarima que está ubicada al lado de la
+            biblioteca. </p>
+        <p>El 17 de diciembre de este mismo año se lleva a cabo la primera promoción de bachilleres celebrando el 25
+            aniversario de la fundación del colegio, y la graduación de los maestros en superación académica en la UNAN
+            león.
+            <img class="ui medium right floated image" data-src="resources/img/carousel/carousel4.jpg">
+            En 2001 se construye la secretaria del colegio por un organismo llamado ‘’construyendo futuros’’.
+            En 2005 se construye la tarima en el patio central y alumnos de undécimo grado de esa generación donaron las
+            tres astas de la bandera ubicado en su sitio actual.
+            En 2009 se caen los arboles de eucalipto dañando a causa de un huracán la infraestructura de la cancha.
+            En 2010 se dio la remodelación del colegio dándose cambios de techado, cielo raso, tendido eléctrico,
+            tubería de agua potable y alcantarilla, cambios de inodoros y puertas de los baños de secundaria y en
+            primaria se instalaron lavamanos, se instalaron abanicos en todas las aulas, se cambiaron todas las puertas
+            y se retocaron las paredes, se reactiva la sala de computación con 25 máquinas que las incluía el proyecto.
+        </p>
+
+    </div>
+
+
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+            <div class="ui stackable inverted divided grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 1</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 2</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Group 3</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Link One</a>
+                        <a href="#" class="item">Link Two</a>
+                        <a href="#" class="item">Link Three</a>
+                        <a href="#" class="item">Link Four</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <img src="resources/img/logo.png" class="ui centered mini image">
+            <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Contactanos!</a>
+                <a class="item">Colegio Madre Maria Eugenia @Todos los derechos reservados</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
